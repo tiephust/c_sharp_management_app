@@ -353,3 +353,63 @@ MigrationBackup/
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
 
+# ============================================
+# Security - Files chứa Secrets (KHÔNG COMMIT)
+# ============================================
+
+# Configuration files với secrets
+appsettings.Development.json
+appsettings.Production.json
+appsettings.Local.json
+secrets.json
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.production
+*.env
+
+# Keys và Certificates
+*.pfx
+*.key
+*.pem
+*.jks
+*.keystore
+*.crt
+*.cer
+
+# Database files với real data
+*.mdf
+*.ldf
+*.db
+*.sqlite
+*.sqlite3
+*.bak
+
+# Log files (có thể chứa sensitive data)
+*.log
+logs/
+Logs/
+
+# User Secrets (nếu được lưu trong file)
+secrets.json
+
+# Backup files
+*.backup
+*.bak
+backup/
+Backup/
+
+# Temporary files có thể chứa secrets
+*.tmp
+*.temp
+temp/
+Temp/
+
+# ============================================
+# Template files (CÓ THỂ COMMIT)
+# ============================================
+# Các file .example hoặc .template có thể được commit
+# Ví dụ: appsettings.Development.json.example
+
